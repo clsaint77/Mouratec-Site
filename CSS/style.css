@@ -28,28 +28,30 @@ html {
   scroll-behavior: smooth;
 }
 
+/* aumenta espaço no final da página */
+body {
+    padding-bottom: 300px; 
+      position: relative;
+  overflow-x: hidden;
+}
+
 /* ------------------------- */
 /* VÍDEO DE FUNDO            */
 /* ------------------------- */
 .caixa-video {
   position: fixed;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   z-index: -1;
   overflow: hidden;
   pointer-events: none;
 }
 
 .caixa-video video {
-  position: fixed;
-  top: 50%;
-  left: 50%;
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
-  transform: translate(-50%, -50%);
   object-fit: cover;
-  min-width: 100%;
-  min-height: 100%;
 }
 
 .mascara {
@@ -559,10 +561,7 @@ body.menu-aberto::before {
   letter-spacing: 0.5px;
 }
 
-/* aumenta espaço no final da página */
-body {
-    padding-bottom: 300px; 
-}
+
 
 .whatsapp-float {
     position: fixed;
@@ -617,6 +616,15 @@ body {
 .toggle_btn {
     display: block;
   }
+
+  .caixa-video,
+  .caixa-video video {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+}
 
     .whatsapp-float {
     width: 56px;
