@@ -400,6 +400,7 @@ body.menu-aberto::before {
 .destaque-item {
   flex: 2;
   min-width: 220px;
+
 }
 
 .destaque-numero {
@@ -407,7 +408,8 @@ body.menu-aberto::before {
   font-weight: 900;
   letter-spacing: 2px;
   color: var(--main-color);
-  text-shadow: 0 0 25px rgba(254, 206, 0, 0.25);
+  text-shadow: 0 0 25px var(--main-color);
+      filter: brightness(3);
 }
 
 
