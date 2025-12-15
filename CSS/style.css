@@ -699,6 +699,7 @@ body.menu-aberto::before {
     flex-wrap: wrap;          
     font-size: 2.6rem;
     line-height: 1.2;
+    max-width: fit-content;
   }
 
   .faixa-clientes .titulo span {
