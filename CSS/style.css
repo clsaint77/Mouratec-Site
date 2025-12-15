@@ -693,6 +693,11 @@ body.menu-aberto::before {
 }
 
 /* Clientes - mobile */
+
+  .faixa-clientes h3 {
+    font-size: 2.8rem;
+  }
+
 .clientes-logos {
   grid-template-columns: repeat(2, 1fr);
 }
