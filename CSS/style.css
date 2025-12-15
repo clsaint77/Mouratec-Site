@@ -474,10 +474,6 @@ body.menu-aberto::before {
   transform: scale(1.08);
 }
 
-.faixa-clientes .titulo::after {
-  color: var(--main-color);
-}
-
 /* ===== ANIMAÇÃO FADE-IN ===== */
 .fade-in {
   opacity: 0;
@@ -700,7 +696,7 @@ body.menu-aberto::before {
 
  /* Título clientes em coluna */
   .faixa-clientes .titulo {
-    flex-wrap: wrap;            /* permite quebrar linha */
+    flex-wrap: wrap;          
     font-size: 2.6rem;
     line-height: 1.2;
   }
@@ -710,26 +706,6 @@ body.menu-aberto::before {
     padding: 0 0.6rem;
   }
 
-  /* Palavra "Clientes" sozinha embaixo */
-  .faixa-clientes .titulo::after {
-    content: "Clientes";
-    width: 100%;
-    display: block;
-    text-align: center;
-    font-size: 2.8rem;
-    margin-top: 0.6rem;
-    color: var(--white-color);
-  }
-
-  /* Esconde o texto original "Clientes" */
-  .faixa-clientes .titulo {
-    position: relative;
-  }
-
-  .faixa-clientes .titulo span:last-child {
-    display: none;
-  }
-}
 
 .clientes-logos {
   grid-template-columns: repeat(2, 1fr);
