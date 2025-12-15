@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Mouratec</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+  <div class="caixa-video">
+    <video src="./videos/video_inicial.mp4" autoplay loop muted playsinline></video>
+    <div class="mascara"></div>
+  </div>
+
+<header class="site-header">
+  <div class="topo">
+
+    <!-- Botão hambúrguer (agora fica a esquerda e vira X) -->
+    <div class="toggle_btn">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <a href="#">
+      <img src="img/logo_mouratec.png" alt="Logo Mouratec" id="home">
+    </a>
+
+    <nav class="menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Sobre Nós</a></li>
+        <li><a href="services">Serviços</a></li>
+        <li><a href="https://meuportifolio.com" target="_blank">Portfólio</a></li> 
+        <li><a href="#final">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- MENU MOBILE MODERNO -->
+  <div class="dropdown_menu">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">Sobre Nós</a></li>
+      <li><a href="services">Serviços</a></li>
+      <li><a href="https://meuportifolio.com" target="_blank">Portfólio</a></li> 
+      <li><a href="#final">Contato</a></li>
+    </ul>
+  </div>
+</header>
+
+
+ <main class="conteudo" id="home">
+    <section class="hero">
+      <div class="container">
+        <h3> Soluções inteligentes para sua empresa! </h3>
+        <p>A <span>Mouratec</span> oferece serviços de TI, sistemas embarcados, soluções industriais e automação. Unimos tecnologia e inovação para otimizar processos, aumentar a produtividade e entregar resultados eficientes para o seu negócio.</p>
+        <a href="https://wa.me/5551991072507" target="_blank" class="botao-link">Realize seu projeto!</a>
+      </div>
+    </section>
+
+    <section class="sobre fade-in" id="about">
+      <div class="container">
+        <h2 class="titulo"><span>Sobre</span> nós</h2>
+        <div class="sobre-grid">
+          <div class="sobre-img">
+            <img src="./img/sobre1.png" alt="Imagem Sobre Nós">
+            <img src="./img/sobre2.JPEG" alt="Imagem Sobre Nós">
+          </div>
+          <div class="sobre-texto">
+            <p>Fundada em 2012, a <span>Mouratec</span> é uma empresa gaúcha com experiência em tecnologia e soluções industriais. Atuamos de forma sólida e confiável, oferecendo serviços que unem inovação, qualidade e compromisso com cada cliente.</p>
+            <h2>Nascemos com o propósito de entregar soluções completas, atendendo desde instalação e manutenção elétrica até sistemas embarcados, automação e TI. Nossa versatilidade e capacidade técnica nos permitem atuar em diversos segmentos, sempre com foco em eficiência, segurança e resultados.</h2>
+            <a href="portfolio.html"  class="btn" href="#">Saiba Mais</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+<!-- ===== FAIXA DE DESTAQUES ===== -->
+<section class="faixa-destaques fade-in">
+  <div class="destaques-container">
+
+    <div class="destaque-item">
+      <span class="destaque-numero contador" data-numero="13">0+</span>
+      <p>Mais de 13 anos de experiência</p>
+    </div>
+
+    <div class="destaque-item">
+      <span class="destaque-numero contador" data-numero="24">0h</span>
+      <p>Atendimento 24 horas</p>
+    </div>
+
+    <div class="destaque-texto">
+      <p>
+        Realizamos visitas técnicas ou reuniões para entender a sua demanda.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- ===== NOSSOS CLIENTES ===== -->
+<section class="faixa-clientes fade-in">
+  <h2 class="titulo">Nossos<span>Principais</span> Clientes</h2>
+
+  <div class="clientes-logos">
+    <img src="img/logo_volvo.png" alt="Cliente 1">
+    <img src="img/logo_localiza.png" alt="Cliente 2">
+    <img src="img/logo_scania1.png" alt="Cliente 3">
+  </div>
+</section>
+
+
+   <!-- Rodape que aparece apenas no final da pagina -->
+<footer class="footer-final" id="footerFinal">
+    <div class="footer-container">
+
+        <!-- Linha de contatos lado a lado -->
+        <div class="footer-contatos">
+            <div class="footer-item">
+                <img src="icons/gmail.svg" alt="email" class="footer-icon">
+                <a href="mailto:mouratec.manutencoes@gmail.com">mouratec.manutencoes@gmail.com</a>
+            </div>
+
+            <div class="footer-item">
+                <img src="icons/whatsapp.svg" alt="whatsapp" class="footer-icon">
+                <a href="https://wa.me/5551991072507" target="_blank">(51) 99107-2507</a>
+            </div>
+        </div>
+
+        <!-- Frase-->
+        <p class="footer-frase">
+            A excelência nunca é um acidente, mas um esforço diário de todos.
+        </p>
+
+    </div>
+</footer>
+
+  </main>
+  <script src="./JS/script.js"></script>
+
+<div id="final"></div>
+
+<!-- Botao Flutuante do WhatsApp -->
+<a href="https://wa.me/5551991072507" target="_blank" class="whatsapp-float">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+</body>
+</html>
