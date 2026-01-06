@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Mouratec</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+  <div class="caixa-video">
+    <video src="./videos/video_inicial.mp4" autoplay loop muted playsinline></video>
+    <div class="mascara"></div>
+  </div>
+
+<header class="site-header">
+  <div class="topo">
+
+    <div class="toggle_btn">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <a href="index.html">
+      <img src="img/logo_mouratec.png" alt="Logo Mouratec" id="home">
+    </a>
+
+  </div>
+</header>
+
+<main class="conteudo portfolio-page">
+
+  <section class="portfolio">
+    <h2 class="titulo">Nossas <span>Especialidades</span></h2>
+
+    <div class="portfolio-grid">
+
+      <div class="portfolio-item">
+        <img src="./img/sobre2.png" alt="Automação">
+
+        <button class="portfolio-btn">Automação</button>
+
+        <div class="portfolio-detalhes">
+          <p>• Controle industrial e predial</p>
+          <p>• Sistemas para Bomba D'água</p>
+          <p>• Paineis de controle</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item destaque">
+        <img src="img/TI.png" alt="T.I.">
+
+        <button class="portfolio-btn">T.I.</button>
+
+        <div class="portfolio-detalhes">
+          <p>• Infraestrutura Lógica</p>
+          <p>• Cabeamento e Controle</p>
+          <p>• Software</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item">
+        <img src="img/trabalhando-no-codigo.jpg" alt="Projeto 3">
+
+        <button class="portfolio-btn">Sistemas Embarcados</button>
+
+        <div class="portfolio-detalhes">
+          <p>• CLP e IHM</p>
+          <p>• Controle, comunicação e monitoramento</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<section class="ultimo-projeto" id="ultimo-projeto">
+  <div class="container">
+
+    <h2 class="titulo">
+      Nossos <span>Últimos</span> Projetos
+    </h2>
+
+    <div class="projeto-editorial">
+
+      <!-- BLOCO 1 -->
+      <div class="projeto-bloco">
+        <div class="projeto-img">
+          <img src="img/img11.jpg" alt="Projeto Mouratec">
+        </div>
+
+        <div class="projeto-texto">
+          <h3>Painel Elétrico</h3>
+          <span>Automação & Infraestrutura</span>
+          <p>
+            Painel elétrico de distribuição de potência com barramentos e dispositivos de proteção. Trabalhamos conforme todas as normas de segurança e qualidade vigentes, como a NR10, NBR IEC 61439 e ISO 9001.
+          </p>
+        </div>
+      </div>
+
+      <div class="projeto-bloco destaque">
+        <div class="projeto-img">
+          <img src="img/img4.jpg" alt="Projeto em destaque">
+        </div>
+
+        <div class="projeto-texto">
+          <h3>Rack</h3>
+          <span>Infraestrutura de T.I.</span>
+          <p>
+            Implementação de infraestrutura completa de T.I.,
+            incluindo cabeamento estruturado, organização de rack, switches e
+            servidores, seguindo padrões profissionais.
+          </p>
+        </div>
+      </div>
+
+      <div class="projeto-bloco">
+        <div class="projeto-img">
+          <img src="img/sistemas.jpg" alt="Sistemas Embarcados">
+        </div>
+
+        <div class="projeto-texto">
+          <h3>Sistema Embarcado para linha industrial</h3>
+          <span>Controle & Monitoramento</span>
+          <p>
+            Criação e integração de sistema para linha industrial com controle inteligente,
+            comunicação entre CLP's e IHM e monitoramento em tempo real,
+            assegurando desempenho e confiabilidade.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="carousel-portfolio">
+  <div class="carousel-container">
+
+    <button class="carousel-btn prev">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+
+    <div class="carousel-viewport">
+
+      <div class="carousel-item active" data-desc="desc-1">
+        <img src="img/img13.jpg" alt="Painel Elétrico">
+      </div>
+
+      <div class="carousel-item next" data-desc="desc-2">
+        <img src="img/img6.jpg" alt="Infraestrutura TI">
+      </div>
+
+      <div class="carousel-item prev" data-desc="desc-3">
+        <img src="img/sobre2.png" alt="Sistema Embarcado">
+      </div>
+
+    </div>
+
+    <button class="carousel-btn next">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+
+  </div>
+
+  <!-- DESCRIÇÃO FORA DO VIEWPORT -->
+  <div class="carousel-desc-area">
+
+    <div class="carousel-desc active" id="desc-1">
+      <h3>Manutenção Preventiva</h3>
+      <p>
+        Realizamos manutenção preventiva em equipamentos industriais garantindo a confiabilidade e eficiência operacional.
+      </p>
+    </div>
+
+    <div class="carousel-desc" id="desc-2">
+      <h3>Infraestrutura de T.I.</h3>
+      <p>
+        Cabeamento estruturado, racks e organização profissional. Realizamos tudo o que sua rede precisa.
+      </p>
+    </div>
+
+    <div class="carousel-desc" id="desc-3">
+      <h3>Sistemas Embarcados</h3>
+      <p>
+        Desenvolvimento de sistemas personalizados com CLPs, IHMs, comunicação industrial e monitoramento em tempo real.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer-final" id="footerFinal">
+    <div class="footer-container">
+
+        <div class="footer-contatos">
+            <div class="footer-item">
+                <img src="icons/gmail.svg" alt="email" class="footer-icon">
+                <a href="mailto:mouratec.manutencoes@gmail.com">mouratec.manutencoes@gmail.com</a>
+            </div>
+
+            <div class="footer-item">
+                <img src="icons/whatsapp.svg" alt="whatsapp" class="footer-icon">
+                <a href="https://wa.me/5551991072507" target="_blank">(51) 99107-2507</a>
+            </div>
+        </div>
+
+
+        <p class="footer-frase">
+            A excelência nunca é um acidente, mas um esforço diário de todos.
+        </p>
+
+    </div>
+</footer>
+
+  </main>
+  <script src="./JS/script.js"></script>
+
+<div id="final"></div>
+
+
+<a href="https://wa.me/5551991072507" target="_blank" class="whatsapp-float">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+</body>
+</html>

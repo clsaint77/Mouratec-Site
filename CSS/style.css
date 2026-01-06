@@ -2,7 +2,7 @@
 /* CONFIGURAÇÕES INICIAIS   */
 /* ------------------------- */
 :root{
-  font-size: 10px;
+    font-size: 10px;
   --main-color: #fece00;
   --black-color: #131313;
   --white-color: #ffffff;
@@ -22,17 +22,14 @@
 html, body {
   overflow-x: hidden;
   max-width: 100%;
-}
-
-html {
   scroll-behavior: smooth;
 }
 
 /* aumenta espaço no final da página */
 body {
     padding-bottom: 300px; 
-      position: relative;
-  overflow-x: hidden;
+    position: relative;
+    overflow-x: hidden;
 }
 
 /* ------------------------- */
@@ -598,6 +595,327 @@ body.menu-aberto::before {
 }
 
 
+/* ===== PORTFOLIO ===== */
+.portfolio {
+  padding: 15rem 2rem 8rem;
+  position: relative;
+  z-index: 2;
+}
+
+.portfolio-grid {
+  max-width: 1200px;
+  margin: 6rem auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+  align-items: start;
+}
+
+.portfolio-item {
+  text-align: center;
+}
+
+.portfolio-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* imagem central em destaque */
+.portfolio-item.destaque {
+  transform: translateY(-30px);
+}
+
+.portfolio-btn {
+  margin-top: 2rem;
+  width: 100%;
+  padding: 1.3rem;
+  background: linear-gradient(135deg, #fece00, #f5b800);
+  color: var(--black-color);
+  font-size: 1.6rem;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 120%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.4),
+    transparent
+  );
+  transition: all 0.6s ease;
+}
+
+.portfolio-btn:hover::before {
+  left: 120%;
+}
+
+.portfolio-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(254, 206, 0, 0.4);
+  filter: brightness(1.05);
+}
+
+/* ===== EFEITO CASCATA ===== */
+.portfolio-detalhes {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.45s ease;
+  margin-top: 1.5rem;
+}
+
+.portfolio-detalhes p {
+  background: rgba(18, 20, 24, 0.95);
+  border-left: 4px solid var(--main-color);
+  padding: 1.8rem;
+  border-radius: 6px;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  font-weight: 300;
+  color: #e6e6e6;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.35s ease;
+}
+
+/* estado aberto */
+.portfolio-item.ativo .portfolio-detalhes {
+  max-height: 350px;
+}
+
+.portfolio-item.ativo .portfolio-detalhes p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== NOSSO ÚLTIMO PROJETO (EDITORIAL) ===== */
+.ultimo-projeto {
+  padding: 14rem 2rem;
+  background: var(--back-ground);
+  position: relative;
+  z-index: 2;
+}
+
+.projeto-editorial {
+  max-width: 1100px;
+  margin: 6rem auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+/* Bloco horizontal */
+.projeto-bloco {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+/* Destaque central */
+.projeto-bloco.destaque {
+  grid-template-columns: 320px 1fr;
+}
+
+/* Imagem pequena */
+.projeto-img img {
+  width: 100%;
+  border-radius: 10px;
+  filter: grayscale(100%);
+  transition: all 0.4s ease;
+}
+
+.projeto-bloco:hover .projeto-img img {
+  filter: grayscale(0%);
+  transform: scale(1.04);
+}
+
+/* Texto */
+.projeto-texto h3 {
+  font-size: 2.6rem;
+  color: var(--white-color);
+  margin-bottom: 0.6rem;
+  text-transform: uppercase;
+}
+
+.projeto-texto span {
+  display: block;
+  font-size: 1.4rem;
+  color: var(--main-color);
+  letter-spacing: 2px;
+  margin-bottom: 1.4rem;
+}
+
+.projeto-texto p {
+  font-size: 1.7rem;
+  line-height: 1.8;
+  color: #e0e0e0;
+  font-weight: 300;
+  max-width: 650px;
+}
+
+/* ===== CARROSSEL CENTRAL FIXO ===== */
+
+.carousel-container {
+  max-width: 1100px;
+  margin: 6rem auto 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-viewport {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* base */
+.carousel-item {
+  position: absolute;
+  width: 260px;
+  opacity: 0;
+  transform: translateX(0) scale(0.85);
+  transition:
+    transform 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.6s ease;
+  pointer-events: none;
+}
+
+.carousel-item img {
+  width: 100%;
+  border-radius: 12px;
+  filter: grayscale(100%);
+  transition: all 0.4s ease;
+}
+
+.carousel-item.active {
+  width: 380px;
+  opacity: 1;
+  transform: translateX(0) scale(1);
+  z-index: 3;
+  pointer-events: auto;
+}
+
+.carousel-item.active img {
+  filter: grayscale(0%);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.6);
+}
+
+/* ESQUERDA */
+.carousel-item.prev {
+  transform: translateX(-320px) scale(0.85);
+  opacity: 0.5;
+}
+
+/* DIREITA */
+.carousel-item.next {
+  transform: translateX(320px) scale(0.85);
+  opacity: 0.5;
+}
+
+/* DESCRIÇÃO */
+.carousel-desc {
+  margin-top: 2rem;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.4s ease;
+}
+
+.carousel-item.active .carousel-desc {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* BOTÕES */
+.carousel-btn {
+  background: rgba(254,206,0,0.9);
+  border: none;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  z-index: 5;
+  transition: all 0.3s ease;
+}
+
+.carousel-btn.prev { left: -10px; }
+.carousel-btn.next { right: -10px; }
+
+.carousel-btn:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 20px var(--main-color);
+}
+
+/* ===== DESCRIÇÃO COM FUNDO ESCURO ===== */
+
+.carousel-desc-area {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  min-height: 140px;
+  position: relative;
+}
+
+/* Caixa escura */
+.carousel-desc {
+  max-width: 460px;
+  background: rgba(12,12,12,0.95);
+  padding: 2.4rem;
+  border-radius: 12px;
+  border-left: 4px solid var(--main-color);
+
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.45s ease;
+
+  position: absolute;
+  pointer-events: none;
+  text-align: center;
+}
+
+/* Texto */
+.carousel-desc h3 {
+  font-size: 2.2rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.carousel-desc p {
+  font-size: 1.6rem;
+  color: #e2e2e2;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+/* Só aparece no item ativo */
+.carousel-desc.active {
+  opacity: 1;
+  transform: translateY(0);
+  position: relative;
+  pointer-events: auto;
+}
+
+
 /* ------------------------- */
 /* RESPONSIVIDADE - MOBILE   */
 /* ------------------------- */
@@ -714,6 +1032,15 @@ body.menu-aberto::before {
   grid-template-columns: repeat(2, 1fr);
 }
 
+  .projeto-bloco,
+  .projeto-bloco.destaque {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .projeto-texto p {
+    max-width: 100%;
+  }
 
     .footer-contatos {
         flex-direction: column;
@@ -723,4 +1050,24 @@ body.menu-aberto::before {
     .footer-frase {
         font-size: 1.4rem;
     }
+
+      .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-item.destaque {
+    transform: none;
+  }
+
+  .carousel-item.prev {
+    transform: translateX(-200px) scale(0.8);
+  }
+
+  .carousel-item.next {
+    transform: translateX(200px) scale(0.8);
+  }
+
+  .carousel-item.active {
+    width: 260px;
+  }
 }

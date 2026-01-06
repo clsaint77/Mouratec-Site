@@ -20,13 +20,11 @@
 
 <header class="site-header">
   <div class="topo">
-
-    <!-- Botão hambúrguer (agora fica a esquerda e vira X) -->
     <div class="toggle_btn">
       <i class="fa-solid fa-bars"></i>
     </div>
 
-    <a href="#">
+    <a href="index.html">
       <img src="img/logo_mouratec.png" alt="Logo Mouratec" id="home">
     </a>
 
@@ -34,20 +32,19 @@
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">Sobre Nós</a></li>
-        <li><a href="services">Serviços</a></li>
-        <li><a href="https://meuportifolio.com" target="_blank">Portfólio</a></li> 
+        <li><a href="portfolio.html">Serviços</a></li>
+        <li><a href="portfolio.html">Portfólio</a></li> 
         <li><a href="#final">Contato</a></li>
       </ul>
     </nav>
   </div>
 
-  <!-- MENU MOBILE MODERNO -->
   <div class="dropdown_menu">
     <ul>
       <li><a href="#home">Home</a></li>
       <li><a href="#about">Sobre Nós</a></li>
-      <li><a href="services">Serviços</a></li>
-      <li><a href="https://meuportifolio.com" target="_blank">Portfólio</a></li> 
+      <li><a href="portfolio.html">Serviços</a></li>
+      <li><a href="portfolio.html">Portfólio</a></li> 
       <li><a href="#final">Contato</a></li>
     </ul>
   </div>
@@ -80,7 +77,6 @@
       </div>
     </section>
   
-<!-- ===== FAIXA DE DESTAQUES ===== -->
 <section class="faixa-destaques fade-in">
   <div class="destaques-container">
 
@@ -103,30 +99,65 @@
   </div>
 </section>
 
+<section class="carousel-portfolio">
+  <div class="carousel-container">
 
+    <button class="carousel-btn prev">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
 
-<!-- ===== NOSSOS CLIENTES ===== -->
+    <div class="carousel-viewport">
+
+      <div class="carousel-item active" data-desc="desc-1">
+        <img src="img/img10.jpg">
+      </div>
+
+      <div class="carousel-item next" data-desc="desc-2">
+        <img src="img/img8.jpg">
+      </div>
+
+      <div class="carousel-item prev" data-desc="desc-3">
+        <img src="img/img5.jpg">
+      </div>
+
+        <div class="carousel-item prev" data-desc="desc-4">
+        <img src="img/img13.jpg">
+      </div>
+
+        <div class="carousel-item prev" data-desc="desc-5">
+        <img src="img/img2.jpg">
+      </div>
+
+    </div>
+
+    <button class="carousel-btn next">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+
+  </div>
+</section>
+
 <section class="faixa-clientes fade-in">
   <h2 class="titulo">Nossos<span>Principais</span> Clientes</h2>
 
   <div class="clientes-logos">
-    <img src="img/logo_volvo.png" alt="Cliente 1">
+    <img src="img/logo_scania1.png" alt="Cliente 1">
     <img src="img/logo_localiza.png" alt="Cliente 2">
-    <img src="img/logo_scania1.png" alt="Cliente 3">
+    <img src="img/logo_volvo.png" alt="Cliente 3">
   </div>
 </section>
 
 
-   <!-- Rodape que aparece apenas no final da pagina -->
 <footer class="footer-final" id="footerFinal">
     <div class="footer-container">
 
-        <!-- Linha de contatos lado a lado -->
         <div class="footer-contatos">
             <div class="footer-item">
                 <img src="icons/gmail.svg" alt="email" class="footer-icon">
-                <a href="mailto:mouratec.manutencoes@gmail.com">mouratec.manutencoes@gmail.com</a>
+                <a href="mailto:mouratec.manutencoes@gmail.com">mouratec.manutencoes@gmail.com </a>
+                <a href="mailto:mouratecprojects@gmail.com">| mouratecprojects@gmail.com</a>
             </div>
+            
 
             <div class="footer-item">
                 <img src="icons/whatsapp.svg" alt="whatsapp" class="footer-icon">
@@ -134,7 +165,7 @@
             </div>
         </div>
 
-        <!-- Frase-->
+
         <p class="footer-frase">
             A excelência nunca é um acidente, mas um esforço diário de todos.
         </p>
@@ -147,7 +178,7 @@
 
 <div id="final"></div>
 
-<!-- Botao Flutuante do WhatsApp -->
+
 <a href="https://wa.me/5551991072507" target="_blank" class="whatsapp-float">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
 </a>
