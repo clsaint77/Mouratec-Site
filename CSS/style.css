@@ -594,7 +594,6 @@ body.menu-aberto::before {
     box-shadow: 0 0 18px #25D366;
 }
 
-
 /* ===== PORTFOLIO ===== */
 .portfolio {
   padding: 15rem 2rem 8rem;
@@ -706,7 +705,6 @@ body.menu-aberto::before {
   position: relative;
   z-index: 2;
 }
-
 .projeto-editorial {
   max-width: 1100px;
   margin: 6rem auto 0;
@@ -1070,4 +1068,17 @@ body.menu-aberto::before {
   .carousel-item.active {
     width: 260px;
   }
+
+  .container .titulo {
+    flex-wrap: wrap;          
+    font-size: 2.6rem;
+    line-height: 1.2;
+    max-width: fit-content;
 }
+.container .titulo span {
+    font-size: 2.6rem;
+    padding: 0 0.6rem;
+  }
+
+}
+
