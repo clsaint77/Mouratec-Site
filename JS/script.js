@@ -1,6 +1,4 @@
-// ===============================
-// ROLAGEM SUAVE PARA ÂNCORAS
-// ===============================
+
 document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener('click', function (e) {
     const id = this.getAttribute('href');
