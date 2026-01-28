@@ -82,7 +82,7 @@ nav ul {
 }
 
 nav ul li {
-    display: inline-block;  /* garante alinhamento horizontal */
+    display: inline-block;  
 }
 
 nav ul li a {
@@ -451,10 +451,10 @@ body.menu-aberto::before {
   margin: 4rem auto 0;
 
   display: flex;
-  justify-content: center;   /* centraliza horizontalmente */
+  justify-content: center;   
   align-items: center;
-  gap: 4rem;                 /* espaço entre logos */
-  flex-wrap: wrap;           /* permite quebrar linha se precisar */
+  gap: 4rem;                
+  flex-wrap: wrap;          
 }
 
 
@@ -490,10 +490,10 @@ body.menu-aberto::before {
 /* RODAPE                 */
 /* ------------------------- */
 
-/* Rodape oculto inicialmente */
+/* Rodape */
 #footerFinal {
     width: 100%;
-    background: #0c0c0c; /* mesmo fundo do seu header */
+    background: #0c0c0c; 
     padding: 40px 0;
     color: white;
     transform: translateY(100%);
